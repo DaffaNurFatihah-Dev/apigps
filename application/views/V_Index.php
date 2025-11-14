@@ -33,7 +33,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($data_moulding_component as $key => $value) { ?>
+                            <?php foreach ($data_monitoring as $key => $value) { ?>
                                 <tr style="text-align: center; height:1cm">
                                     <td><?= $key + 1 ?></td>
                                     <td><?= $value['longitude'] ?></td>
