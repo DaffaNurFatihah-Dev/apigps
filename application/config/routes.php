@@ -76,8 +76,7 @@ $route['translate_uri_dashes'] = true;
 // $route['post/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
 
 // === VIEW ROUTE (non API) ===
-$route['monitoring'] = 'Web_monitoring/index';
-
+$route['monitoring'] = 'api/master/C_Web/monitoring';
 
 // === API GET ===
 $route['api/get/monitoring'] = 'api/master/C_Web/getAllData';
