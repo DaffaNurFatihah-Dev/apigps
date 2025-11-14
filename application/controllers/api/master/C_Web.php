@@ -291,11 +291,4 @@ class C_Web extends CI_Controller
             ], 500);
         }
     }
-    public function monitoring()
-    {
-        $data['title'] = "Monitoring GPS";
-        $data['data_monitoring'] = $this->M_Web->getAllData();
-
-        $this->load->view('V_index', $data);
-    }
 }
