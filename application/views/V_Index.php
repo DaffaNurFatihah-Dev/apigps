@@ -26,47 +26,20 @@
                         <thead class="text-uppercase text-white" style="background: #441313;">
                             <tr>
                                 <th>id</th>
-                                <th>shift</th>
-                                <th>device</th>
-                                <th>location</th>
-                                <th>component_code</th>
-                                <th>m_counting</th>
-                                <th>m_ok</th>
-                                <th>m_not</th>
-                                <th>p_ok</th>
-                                <th>p_ok_not_cairan</th>
-                                <th>status</th>
-                                <th>target</th>
-                                <th>component_name</th>
-                                <th>id_inventory</th>
-                                <th>p_not</th>
-                                <th>special_case</th>
-                                <th>no_batch</th>
-                                <th>date</th>
+                                <th>longitude</th>
+                                <th>latitude</th>
+                                <th>voltage</th>
+                                <th>created_at</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($data_moulding_component as $key => $value) { ?>
                                 <tr style="text-align: center; height:1cm">
                                     <td><?= $key + 1 ?></td>
-                                    <td><?= $value['shift'] ?></td>
-                                    <td><?= $value['device'] ?></td>
-                                    <td><?= $value['location'] ?></td>
-                                    <td><?= $value['component_code'] ?></td>
-                                    <td><?= $value['m_counting'] ?></td>
-                                    <td><?= $value['m_ok'] ?></td>
-                                    <td><?= $value['m_not'] ?></td>
-                                    <td><?= $value['p_ok'] ?></td>
-                                    <td><?= $value['p_ok_not_cairan'] ?></td>
-                                    <td><?= $value['status'] ?></td>
-                                    <td><?= $value['target'] ?></td>
-                                    <td><?= $value['component_code'] ?></td>
-                                    <td><?= $value['id_inventory'] ?></td>
-                                    <td><?= $value['p_not'] ?></td>
-                                    <td><?= $value['special_base'] ?></td>
-                                    <td><?= $value['no_batch'] ?></td>
+                                    <td><?= $value['longitude'] ?></td>
+                                    <td><?= $value['latitude'] ?></td>
+                                    <td><?= $value['voltage'] ?></td>
                                     <td><?= substr($value['date'], 0, 8) ?></td>
-                                    <td><?= $value['updated_date'] ?></td>
                                 </tr>
                             <?php } ?>
                         </tbody>

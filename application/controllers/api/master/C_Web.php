@@ -59,22 +59,9 @@ class C_Web extends CI_Controller
 
       // 📋 Definisikan aturan validasi di sini
       $rules = [
-        'shift' => ['required' => true, 'type' => 'int'],
-        'm_counting' => ['required' => true, 'type' => 'int'],
-        'm_ok' => ['required' => true, 'type' => 'int'],
-        'm_not' => ['required' => true, 'type' => 'int'],
-        'p_ok' => ['required' => true, 'type' => 'int'],
-        'p_ok_not_cairan' => ['required' => true, 'type' => 'int'],
-        'target' => ['required' => true, 'type' => 'int'],
-        'id_inventory' => ['required' => true, 'type' => 'int'],
-        'p_not' => ['required' => true, 'type' => 'int'],
-        'device' => ['required' => true, 'type' => 'string'],
-        'location' => ['required' => true, 'type' => 'string'],
-        'status' => ['required' => true, 'type' => 'string'],
-        'component_name' => ['required' => true, 'type' => 'string'],
-        'special_case' => ['required' => true, 'type' => 'string'],
-        'no_batch' => ['required' => true, 'type' => 'string'],
-        'component_code' => ['required' => true, 'type' => 'string'],
+        'longitude' => ['required' => true, 'type' => 'string'],
+        'latitude' => ['required' => true, 'type' => 'string'],
+        'voltage' => ['required' => true, 'type' => 'string'],
       ];
 
       // ✅ Jalankan validasi -> tiap fiel jika belum di isi(!isset) maka akan print ini
@@ -156,23 +143,9 @@ class C_Web extends CI_Controller
 
       // 📋 Aturan validasi field (sesuaikan dengan tipe data agar masuk ke validasi tipe data)
       $rules = [
-          'id' => ['required' => true, 'type' => 'int'],
-          'shift' => ['required' => true, 'type' => 'int'],
-          'm_counting' => ['required' => true, 'type' => 'int'],
-          'm_ok' => ['required' => true, 'type' => 'int'],
-          'm_not' => ['required' => true, 'type' => 'int'],
-          'p_ok' => ['required' => true, 'type' => 'int'],
-          'p_ok_not_cairan' => ['required' => true, 'type' => 'int'],
-          'target' => ['required' => true, 'type' => 'int'],
-          'id_inventory' => ['required' => true, 'type' => 'int'],
-          'p_not' => ['required' => true, 'type' => 'int'],
-          'device' => ['required' => true, 'type' => 'string'],
-          'location' => ['required' => true, 'type' => 'string'],
-          'status' => ['required' => true, 'type' => 'string'],
-          'component_name' => ['required' => true, 'type' => 'string'],
-          'special_case' => ['required' => true, 'type' => 'string'],
-          'no_batch' => ['required' => true, 'type' => 'string'],
-          'component_code' => ['required' => true, 'type' => 'string'],
+        'longitude' => ['required' => true, 'type' => 'string'],
+        'latitude' => ['required' => true, 'type' => 'string'],
+        'voltage' => ['required' => true, 'type' => 'string'],
       ];
 
       // ✅ Jalankan validasi -> tiap fiel jika belum di isi(!isset) maka akan print ini
