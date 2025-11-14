@@ -5,6 +5,7 @@
 
 Options +FollowSymLinks
 RewriteEngine On
+RewriteRule ^testhtaccess$ tes_berhasil.php [L]
 
 RewriteBase /apigps/
 
