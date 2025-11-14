@@ -291,4 +291,8 @@ class C_Web extends CI_Controller
             ], 500);
         }
     }
+    public function test()
+    {
+        echo "API WORKS";
+    }
 }
