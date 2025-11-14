@@ -79,3 +79,8 @@ $route['api/get/monitoring'] = 'api/master/C_Web/getAllData';
 $route['api/get/test'] = 'api/master/C_Web/test';
 $route['api/get/(:any)'] = 'api/master/C_Web/$1';
 $route['api/get/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
+
+$route['api/post/save'] = 'api/master/C_Web/save';
+$route['api/post/update'] = 'api/master/C_Web/update';
+$route['api/post/(:any)'] = 'api/master/C_Web/$1';
+$route['api/post/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
