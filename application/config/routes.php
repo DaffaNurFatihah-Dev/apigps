@@ -67,10 +67,15 @@ $route['translate_uri_dashes'] = true;
 
 // routes dipake buat nentuin jalur link API
 
-// ngarahin permintaan http get dengan url get/function yang ada di C_Web dlm controller api/master
-$route['get/(:any)'] = 'api/master/C_Web/$1';
-$route['get/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
+// // ngarahin permintaan http get dengan url get/function yang ada di C_Web dlm controller api/master
+// $route['get/(:any)'] = 'api/master/C_Web/$1';
+// $route['get/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
 
-// ngarahin permintaan http post dengan url post/function yang ada di C_Web dlm controller api/master
-$route['post/(:any)'] = 'api/master/C_Web/$1';
-$route['post/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
+// // ngarahin permintaan http post dengan url post/function yang ada di C_Web dlm controller api/master
+// $route['post/(:any)'] = 'api/master/C_Web/$1';
+// $route['post/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
+
+$route['api/get/monitoring'] = 'api/master/C_Web/getAllData';
+$route['api/get/test'] = 'api/master/C_Web/test';
+$route['api/get/(:any)'] = 'api/master/C_Web/$1';
+$route['api/get/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
