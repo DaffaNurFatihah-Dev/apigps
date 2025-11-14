@@ -75,10 +75,15 @@ $route['translate_uri_dashes'] = true;
 // $route['post/(:any)'] = 'api/master/C_Web/$1';
 // $route['post/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
 
-$route['api/get/monitoring'] = 'api/master/C_Web/monitoring';
+// === VIEW ROUTE (non API) ===
+$route['monitoring'] = 'api/master/C_Web/monitoring';
+
+// === API GET ===
+$route['api/get/monitoring'] = 'api/master/C_Web/getAllData';
 $route['api/get/(:any)'] = 'api/master/C_Web/$1';
 $route['api/get/(:any)/(:any)'] = 'api/master/C_Web/$1/$2';
 
+// === API POST ===
 $route['api/post/save'] = 'api/master/C_Web/save';
 $route['api/post/update'] = 'api/master/C_Web/update';
 $route['api/post/(:any)'] = 'api/master/C_Web/$1';

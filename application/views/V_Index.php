@@ -39,7 +39,7 @@
                                     <td><?= $value['longitude'] ?></td>
                                     <td><?= $value['latitude'] ?></td>
                                     <td><?= $value['voltage'] ?></td>
-                                    <td><?= substr($value['date'], 0, 8) ?></td>
+                                    <td><?= substr($value['created_at'], 0, 8) ?></td>
                                 </tr>
                             <?php } ?>
                         </tbody>
