@@ -62,6 +62,8 @@ class C_Web extends CI_Controller
         'longitude' => ['required' => true, 'type' => 'string'],
         'latitude' => ['required' => true, 'type' => 'string'],
         'voltage' => ['required' => true, 'type' => 'string'],
+        'accurate' => ['required' => true, 'type' => 'string'],
+        'waktu_rtc' => ['required' => true, 'type' => 'string'],
       ];
 
       // ✅ Jalankan validasi -> tiap fiel jika belum di isi(!isset) maka akan print ini
@@ -146,6 +148,8 @@ class C_Web extends CI_Controller
         'longitude' => ['required' => true, 'type' => 'string'],
         'latitude' => ['required' => true, 'type' => 'string'],
         'voltage' => ['required' => true, 'type' => 'string'],
+        'accurate' => ['required' => true, 'type' => 'string'],
+        'waktu_rtc' => ['required' => true, 'type' => 'string'],
       ];
 
       // ✅ Jalankan validasi -> tiap fiel jika belum di isi(!isset) maka akan print ini
