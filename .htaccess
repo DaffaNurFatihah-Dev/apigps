@@ -5,7 +5,7 @@
 
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /apigps/
+RewriteBase /gpsapi/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
